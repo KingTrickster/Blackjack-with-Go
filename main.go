@@ -1,17 +1,22 @@
 package main
 
-import {
-	"fmt",
-	"https://github.com/KingTrickster/Blackjack-with-Go/deck"
-}
+import (
+	"fmt"
+
+	"github.com/KingTrickster/Blackjack-with-Go/deck"
+	"github.com/fatih/color"
+)
 
 func PrintIntro() {
-	fmt.Println("21 Blackjack! By Alex Trejo/KingTrickster, 2024")
-	fmt.Println("This is free software, and you are welcome to redistribute it")
-	fmt.Println("<http://www.apache.org/licenses/>")
+	color.Cyan("21 Blackjack! By Alex Trejo (GH: KingTrickster) 2024")
+	color.Cyan("This is free software, and you are welcome to redistribute it")
+	color.Yellow("<http://www.apache.org/licenses/>")
+	fmt.Println()
 }
 
 func main() {
+
+	PrintIntro()
 
 	var d deck.StandardDeck
 	d.Initialize()
