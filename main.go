@@ -14,6 +14,10 @@ func PrintIntro() {
 	fmt.Println()
 }
 
+func PrintDealerInfo() {
+
+}
+
 func main() {
 
 	PrintIntro()
